@@ -3,10 +3,11 @@ layout: default
 title: Evan Meagher
 ---
 
+<ul class="post">
 {% for post in site.posts limit: 5 %}
-<div class="post">
-  <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
-  <p class="postmeta">{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
-  {{ post.content }}
-</div>
+  <li>
+    <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+    <p class="postmeta">{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
+  </li>
 {% endfor %}
+</ul>

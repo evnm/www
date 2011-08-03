@@ -21,24 +21,25 @@ header, #content
 header
   position: relative
   height: 34px
-  margin-bottom: 2em
+  margin-bottom: 1em
   padding: 24px 0 12px 0
   border-bottom: 1px solid $border_color
 
 header a#title
   float: left
-  display: block
+  display: inline-block
+  height: 40px
   font: 1.6em $slab_serif
   font-weight: 400
   color: #787878
   text-shadow: #cbcbcb 0 1px 0
   border: none
 
-header a#title span
-  color: #505050
-
 header a#title:hover
   border: none
+
+header a#title span
+  color: #505050
 
 header ul.navigation
   float: right
@@ -75,43 +76,45 @@ ul.navigation a.aboutlink
   background: transparent url(/images/user-white.png) center left no-repeat
 
 .post
-  border-bottom:solid 1px #DEE4DA
-  padding: 0 0 0 0
-  margin-bottom: 4em
+  list-style-type: none
+  margin: 2em 0 0 0
+  border-bottom: 1px solid $border_color
 
 .post img
   padding: 8px
 
 .postmeta
-  margin-top: 0
-  padding-top: 1px
+  margin-bottom: 1.2em
   font: 0.9em $slab_serif
+  font-weight: 300
   color: #999
 
 
+.post > a, .post > li > a
+  display: inline-block
+  border: none
+
 h1
-  margin-bottom: 4px
-  font: 1.6em $slab_serif
+  display: inline-block
+  margin-bottom: 10px
+  font: 1.5em $slab_serif
   font-weight: 400
   letter-spacing: 0.04em
   color: #3f3f3f
   text-shadow: #cbcbcb 1px 1px 2px
 
-h1 a
-  color: #3f3f3f
-
 h2
   margin-bottom: 1.5em
   clear: both
   font: 1.3em $slab_serif
-  font-weight: bold
+  font-weight: 400
   color: #4e4e4e
   text-transform: uppercase
   text-shadow: #cbcbcb 0 1px 1px
 
 p
-  line-height: 1.8em
-  margin-bottom: 2.2em
+  line-height: 1.9em
+  margin-bottom: 2em
 
 ol, ul
   list-style-type: disc
@@ -123,7 +126,7 @@ ul li, ol li
   margin-bottom: 0.2em
 
 a
-  color: black
+  color: #0a0a0a
   text-decoration: none
   border-bottom: 1px solid #d4d4d4
 
@@ -170,9 +173,7 @@ code
   outline: 1px dotted #e6e6e6
 
 footer
-  margin-top: 2em
   padding: 12px 0 24px 0
-  border-top: 1px solid $border_color
 
 footer ul.navigation
   float: left
