@@ -8,6 +8,13 @@
     <link href="http://fonts.googleapis.com/css?family=Kreon:300,400" rel="stylesheet" type="text/css" />
     <link href="/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.boastful.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#boastful').boastful({ empty_message: "" });
+      });
+    </script>
   </head>
 
   <body>
@@ -15,7 +22,6 @@
       <header>
         <a id="title" href="/">The website of <span>Evan Meagher</span></a>
         <ul class="navigation">
-          <li><a href="/archive.html" title="Archive" class="archivelink">Archive</a></li>
           <li><a href="/about.html" title="About" class="aboutlink">About</a></li>
         </ul>
       </header>
@@ -25,9 +31,9 @@
       <footer>
         <ul class="navigation">
           <li><a href="/" title="Home">Home</a></li>
-          <li><a href="/archive.html" title="Archive" class="archivelink">Archive</a></li>
-          <li><a href="/about.html" title="About" class="aboutlink">About</a></li>
+          <li><a href="/about.html" title="About">About</a></li>
         </ul>
+        <a class="twitterlink" href="https://twitter.com/evanm">@evanm</a>
       </footer>
     </div>
   </body>

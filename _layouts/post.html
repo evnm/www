@@ -4,6 +4,10 @@ layout: default
 
 <div class="post">
   <a href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
-  <p class="postmeta">{{ page.date | date: "%B %d, %Y at %I:%M %p" }}</p>
+  <p class="postmeta">{{ page.date | date: "%B %d, %Y" }}</p>
   {{ content }}
+  <div id="boastful">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="evanm">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><br />
+  </div>
 </div>
+
