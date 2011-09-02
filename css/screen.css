@@ -71,15 +71,16 @@ ul#post_list {
     margin-bottom: 6px; }
   ul#post_list a {
     display: inline-block;
-    font: 1.3em "Kreon", helvetica, sans;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    color: #505050;
-    text-shadow: #cbcbcb 1px 1px 2px; }
+    font: 16px "Kreon", helvetica, sans;
+    color: #787878;
+    letter-spacing: 0.01em;
+    border: none; }
+  ul#post_list a:hover {
+    color: #3f3f3f; }
   ul#post_list .postmeta {
     margin-left: 14px; }
 
-.post > a, ul#post_list > li > a {
+.post > a {
   display: inline-block;
   border: none; }
 
@@ -179,6 +180,8 @@ footer {
     float: left; }
     footer ul.navigation li {
       margin-right: 1em; }
+      footer ul.navigation li a {
+        padding-left: 0px; }
   footer a.twitterlink {
     float: right;
     margin: 0;
@@ -192,7 +195,7 @@ footer {
     color: #3f3f3f; }
 
 ul#contact_info_list {
-  margin: 0 0 0 1em;
+  margin: 0 auto;
   list-style-type: none; }
   ul#contact_info_list li {
     width: 8em;
@@ -215,7 +218,7 @@ ul#contact_info_list {
   background: transparent url(/images/feed_icon.png) center left no-repeat; }
 
 .twitterlink {
-  background: transparent url(/images/twitter_icon.gif) center left no-repeat; }
+  background: transparent url(/images/twitter_icon.png) center left no-repeat; }
 
 .picplzlink {
   background: transparent url(/images/picplz_icon.png) center left no-repeat; }

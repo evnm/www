@@ -88,16 +88,18 @@ ul#post_list
 
   a
     display: inline-block
-    font: 1.3em $slab_serif
-    font-weight: 400
-    letter-spacing: 0.04em
-    color: #505050
-    text-shadow: #cbcbcb 1px 1px 2px
+    font: 16px $slab_serif
+    color: #787878
+    letter-spacing: 0.01em
+    border: none
+
+  a:hover
+    color: #3f3f3f
 
   .postmeta
     margin-left: 14px
 
-.post > a, ul#post_list > li > a
+.post > a
   display: inline-block
   border: none
 
@@ -204,6 +206,9 @@ footer
     li
       margin-right: 1em
 
+      a
+        padding-left: 0px
+
   a.twitterlink
     float: right
     margin: 0
@@ -218,7 +223,7 @@ footer
     color: #3f3f3f
 
 ul#contact_info_list
-  margin: 0 0 0 1em
+  margin: 0 auto
   list-style-type: none
 
   li
@@ -243,7 +248,7 @@ ul#contact_info_list
 .rsslink
   background: transparent url(/images/feed_icon.png) center left no-repeat
 .twitterlink
-  background: transparent url(/images/twitter_icon.gif) center left no-repeat
+  background: transparent url(/images/twitter_icon.png) center left no-repeat
 .picplzlink
   background: transparent url(/images/picplz_icon.png) center left no-repeat
 .githublink
