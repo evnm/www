@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Evan Meagher</title>
+ <link href="http://evanmeagher.net/atom.xml" rel="self"/>
+ <link href="http://evanmeagher.net/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://evanmeagher.net/</id>
+ <author>
+   <name>Evan Meagher</name>
+   <email>evan.meagher@gmail.com</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://evanmeagher.net{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://evanmeagher.net{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
