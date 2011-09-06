@@ -1,6 +1,7 @@
 ---
 title: Graduation
 layout: post
+optional_meta: " :: originally posted at evnm.tumblr.com"
 ---
 
 It's been a little over two weeks since I graduated from college. Tomorrow I'll pack my life into a truck and begin the 800-mile journey from Seattle to San Francisco.
