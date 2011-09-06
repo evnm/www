@@ -166,6 +166,8 @@ code {
 
 div#boastful h3 {
   display: inline-block; }
+div#boastful a {
+  border: none; }
 div#boastful .twitter-share-button {
   float: right; }
 
