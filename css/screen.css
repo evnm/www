@@ -56,13 +56,17 @@ ul.navigation {
     background: transparent url(/images/user-silhouette.png) center left no-repeat; }
 
 .post img {
-  padding: 8px; }
+  margin: 0.2em 0 2em 0; }
 
 .postmeta {
   margin-bottom: 1.2em;
   font: 0.9em "Kreon", helvetica, sans;
   font-weight: 300;
   color: #999999; }
+
+div.gist {
+  margin-bottom: 1.8em;
+  font-size: 90%; }
 
 ul#post_list {
   list-style-type: none;
