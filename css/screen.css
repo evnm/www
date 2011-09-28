@@ -236,6 +236,9 @@ ul#contact_info_list {
 .lastfmlink {
   background: transparent url(/images/lastfm_icon.png) center left no-repeat; }
 
+.rdiolink {
+  background: transparent url(/images/rdio_icon.png) center left no-repeat; }
+
 .linkedinlink {
   background: transparent url(/images/linkedin_icon.png) center left no-repeat; }
 
