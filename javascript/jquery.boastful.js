@@ -28,6 +28,9 @@
     var parse_request = function(data){
       var author_urls = []
       if(data.response.list.length > 0) {
+        // Add a heading under div#boastful.
+        $('#boastful').prepend('<h3>Trackbacks on Twitter</h3>')
+
         $.each(data.response.list, function(i,tweetback){
           if($.inArray(tweetback.author.url,author_urls) > -1) {
             return true
