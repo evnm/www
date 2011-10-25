@@ -7,13 +7,14 @@ require 'fileutils'
 desc "Draft a new post"
 task :new do
   puts "What should we call this post for now?"
-  name = STDIN.gets.chomp
-  FileUtils.touch("drafts/#{name}.md")
+  title = STDIN.gets.chomp
+  filename = title.gsub(' ', '-').downcase
+  FileUtils.touch("drafts/#{filename}.md")
 
-  open("drafts/#{name}.md", 'a') do |f|
+  open("drafts/#{filename}.md", 'a') do |f|
     f.puts "---"
     f.puts "layout: post"
-    f.puts "title: \"DRAFT: #{name}\""
+    f.puts "title: \"#{title}\""
     f.puts "---"
   end
 end
