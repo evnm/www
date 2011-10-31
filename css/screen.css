@@ -163,6 +163,9 @@ cite {
 acronym {
   border-bottom: 1px dotted gray; }
 
+pre {
+  margin-bottom: 1.8em; }
+
 code {
   font-family: inconsolata, mensch, monospace;
   padding: 0 4px;
