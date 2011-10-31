@@ -35,10 +35,15 @@ task :publish do
     draft_path = drafts[STDIN.gets.chomp.to_i]
     post_title = `grep 'title: ' "#{draft_path}"`.gsub('title: ', '').gsub('"', '').chomp
 
-    # Move the file into the _posts dir and commit.
+    # Move the file into the _posts dir.
     published_filename = "_posts/#{Time.now.strftime("%Y-%m-%d")}-#{File.basename(draft_path)}"
-    `cp "#{draft_path}" "#{published_filename}"`
-    `git add "#{published_filename}" && git commit -m \'Publish post \"#{post_title}\".\'`
+    `mv "#{draft_path}" "#{published_filename}"`
+
+    # Prompt for git commit.
+    puts "Draft moved to posts directory. Commit the changes? [n]"
+    if STDIN.gets.chomp == "y"
+      `git add "#{published_filename}" && git commit -m \'Publish post \"#{post_title}\".\'`
+    end
   end
 end
 
