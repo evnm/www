@@ -164,12 +164,13 @@ acronym {
   border-bottom: 1px dotted gray; }
 
 pre {
-  margin-bottom: 1.8em; }
+  margin-bottom: 1.8em;
+  padding: 2px 2px;
+  border: 1px dotted #e6e6e6; }
 
 code {
-  font-family: inconsolata, mensch, monospace;
-  padding: 0 4px;
-  outline: 1px dotted #e6e6e6; }
+  font-family: inconsolata, monospace;
+  padding: 0px 4px; }
 
 div#boastful h3 {
   display: inline-block; }
