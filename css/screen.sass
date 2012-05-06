@@ -161,21 +161,29 @@ em
   font-style: oblique
 
 blockquote
-  line-height: 1.6em
-  margin: 0 4px 1.7em 4px
-  padding: 12px 16px 12px 60px
-  border: 1px solid #dee4da
-  border-radius: .5em
-  -moz-border-radius: .5em
-  -webkit-border-radius: .5em
-  background: #fcfcfc url(/images/quote.gif) top left no-repeat
+  padding: 14px 24px
+  margin: 0.4em 0 1.6em 0
+  border: 1px solid #e4ebe3
+  border-radius: .3em
+  -moz-border-radius: .3em
+  -webkit-border-radius: .3em
+  background: #fcfcfc // url(/images/quote.gif) top left no-repeat
   color: #6a6a6a
 
   p
-    margin-bottom: 8px
+    line-height: 1.9em
 
-cite
-  font-size: 90%
+  cite
+    display: block
+    border-top: 1px dashed #dee4da
+    margin-top: -.8em
+    margin-bottom: 0.2em
+    padding-top: .8em
+    color: #7a7a7a
+    font-size: 90%
+
+  cite span *
+    color: #9a9a9a
 
 .small
   font-size: 0.9em

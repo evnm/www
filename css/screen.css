@@ -141,20 +141,26 @@ em {
   font-style: oblique; }
 
 blockquote {
-  line-height: 1.6em;
-  margin: 0 4px 1.7em 4px;
-  padding: 12px 16px 12px 60px;
-  border: 1px solid #dee4da;
-  border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  background: #fcfcfc url(/images/quote.gif) top left no-repeat;
+  padding: 14px 24px;
+  margin: 0.4em 0 1.6em 0;
+  border: 1px solid #e4ebe3;
+  border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  background: #fcfcfc;
   color: #6a6a6a; }
   blockquote p {
-    margin-bottom: 8px; }
-
-cite {
-  font-size: 90%; }
+    line-height: 1.9em; }
+  blockquote cite {
+    display: block;
+    border-top: 1px dashed #dee4da;
+    margin-top: -0.8em;
+    margin-bottom: 0.2em;
+    padding-top: 0.8em;
+    color: #7a7a7a;
+    font-size: 90%; }
+  blockquote cite span * {
+    color: #9a9a9a; }
 
 .small {
   font-size: 0.9em;
