@@ -178,13 +178,6 @@ code {
   font-family: inconsolata, monospace;
   padding: 0px 4px; }
 
-div#boastful h3 {
-  display: inline-block; }
-div#boastful a {
-  border: none; }
-div#boastful .twitter-share-button {
-  float: right; }
-
 footer {
   margin-top: 2em;
   padding: 12px 0 36px 0;

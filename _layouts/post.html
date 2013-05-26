@@ -6,8 +6,6 @@ layout: default
   <a href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
   <p class="postmeta">{{ page.date | date: "%B %d, %Y" }}{{ page.optional_meta }}</p>
   {{ content }}
-  <div id="boastful">
-    <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="evanm">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><br />
-  </div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="evanm">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
-
