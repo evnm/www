@@ -7,7 +7,7 @@ A symptom of Scala's growing popularity is the incessant discussion of its place
 
 People have been demonizing the rise of [JavaSchools](http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html) for years and I believe Scala to be an effective countermeasure. It represents the perfect supplement to a programming languages course, with the ability to show students how powerful functional programming is when applied to "real world problems". As a single example, seeing how one can use higher order functions to avoid manual iteration through collections is enough to at least show students how much easier life can be with Scala.
 
-<script src="https://gist.github.com/1239014.js"> </script>
+{% gist 1239014 %}
 
 I posit that the outlook of many students coming out of PL courses is akin to this continuum:
 

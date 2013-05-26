@@ -9,9 +9,11 @@ As a solution to this problem, I wrote [a Node.js program](https://gist.github.c
 
 For example, to run a daemon that checks the directory `Dropbox/expirable-items` once a day for items that are older than a week, modify the variable declarations thusly:
 
-    var dirToWatch = "expirable-items",
-        ttl = 604800000, // 7 days
-        interval = 86400; // 24 hours
+{% highlight javascript %}
+var dirToWatch = "expirable-items",
+    ttl = 604800000, // 7 days
+    interval = 86400; // 24 hours
+{% endhighlight %}
 
 The program depends on the log.js and dropbox Node modules:
 
