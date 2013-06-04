@@ -14,7 +14,7 @@ A sizable portion of the work done by my team at Twitter classifies as paying do
 
 This sentiment is totally understandable. Greenfield work is sexy and fits the trope of the lone hacker cranking out code, fueled by caffeine and the Social Network soundtrack. The harsh reality is that when you're working on systems of any meaningful scale, building in isolation is rare. There will always be dependencies, requirements, or even simply code you wrote two weeks ago that gets in your way.
 
-Technical debt is a natural part of the software development process, and is thus unavoidable. There exist software anti-patterns that produce predictable debt, as codified in Michael Duell's [Resign Patterns](http://www.fsfla.org/~lxoliva/fun/prog/resign-patterns). Through awareness and internalization of sanitary development techniques, one can prevent technical debt from occurring in the first place. But for the inevitable cases when it falls through the cracks, a manageable strategy is to be mindful of the debt as it accumulates and to periodically make a concerted effort to pay it down.
+Technical debt is a natural part of the software development process, and is thus unavoidable. There exist software anti-patterns that produce predictable debt, as codified in Michael Duell's [Resign Patterns](http://www.fsfla.org/~lxoliva/fun/prog/resign-patterns). Through awareness and internalization of sanitary development techniques, one can prevent certain classes of technical debt from occurring in the first place. But for the inevitable cases when it falls through the cracks, a manageable strategy is to be mindful of the debt as it accumulates and to periodically make a concerted effort to pay it down.
 
 ## Mindfulness toward technical debt
 
