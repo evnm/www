@@ -11,7 +11,7 @@ People have been demonizing the rise of [JavaSchools](http://www.joelonsoftware.
 
 I posit that the outlook of many students coming out of PL courses is akin to this continuum:
 
-<img src="/images/pl-continuum.png" height="61" width="500" />
+<img src="/images/pl-continuum.png" />
 
 On one end you have "academic" languages like Haskell, ML, and Scheme which are interesting, but esoteric and impractical in that they're rarely used in production environments due to their difficulty. On the other are the common currency of most software developers: Java and C (and Ruby and Python within more hip circles). The languages on the right are influenced by the research that culminates in the languages on the left in the same way that mainstream musical artists say that they listen to Thelonious Monk and Stravinsky to get ideas.
 
