@@ -219,11 +219,9 @@ ul#contact_info_list {
   ul#contact_info_list a:hover {
     color: #3f3f3f; }
 
-ol.footnote {
-  list-style-type: none;
-  margin: 2em 0 0 0; }
-  ol.footnote li {
-    font-size: 80%; }
+section.footnotes {
+  margin: 2em 0 0 0;
+  font-size: 80%; }
 
 .rsslink {
   background: transparent url(/images/feed_icon.png) center left no-repeat; }
