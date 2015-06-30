@@ -223,31 +223,4 @@ section.footnotes {
   margin: 2em 0 0 0;
   font-size: 80%; }
 
-.rsslink {
-  background: transparent url(/images/feed_icon.png) center left no-repeat; }
-
-.twitterlink {
-  background: transparent url(/images/twitter_icon.png) center left no-repeat; }
-
-.picplzlink {
-  background: transparent url(/images/picplz_icon.png) center left no-repeat; }
-
-.githublink {
-  background: transparent url(/images/github_icon.png) center left no-repeat; }
-
-.emaillink {
-  background: transparent url(/images/email_icon.png) center left no-repeat; }
-
-.lastfmlink {
-  background: transparent url(/images/lastfm_icon.png) center left no-repeat; }
-
-.rdiolink {
-  background: transparent url(/images/rdio_icon.png) center left no-repeat; }
-
-.linkedinlink {
-  background: transparent url(/images/linkedin_icon.png) center left no-repeat; }
-
-.pdflink {
-  background: transparent url(/images/pdf_icon.png) center left no-repeat; }
-
 /*# sourceMappingURL=screen.css.map */
