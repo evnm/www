@@ -1,3 +1,6 @@
 permalink: /:year/:month/:title
 highlighter: pygments
 markdown: kramdown
+sass:
+  dir: css
+  style: compressed
