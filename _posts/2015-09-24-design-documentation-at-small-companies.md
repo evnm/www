@@ -64,7 +64,7 @@ noticed a key difference between what I'm writing now and those I
 wrote at Twitter. Critically, the former tend to rely on the
 availability of services maintained by unfamilar people at other
 companies rather than acquaintances down the hall. For instance, by
-making use Amazon Web Services instead of
+making use of Amazon Web Services instead of
 [technologies stewarded in-house](https://blog.twitter.com/2015/all-about-apache-aurora),
 our services' uptime is reliant on the diligence of anonymous Amazon
 personnel. As the swashbuckling systems cliché goes,
