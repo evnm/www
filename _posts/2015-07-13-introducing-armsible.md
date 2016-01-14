@@ -3,6 +3,9 @@ layout: post
 title: "Introducing Armsible"
 ---
 
+_**Update:** Since the publication of this article, Armsible projects
+have since been folded into [Whisker Labs' GitHub organization](https://github.com/whiskerlabs)._
+
 ![ARM + Ansible](https://s3.amazonaws.com/whiskerlabs.com/img/armsible+logo.png)
 
 Much ink has been spilled over the "Internet of Things". A consequence
@@ -22,7 +25,7 @@ sessions over the lifetime of the device. In contrast to the level of
 automation fetishized in the software operations community, the state
 of the art in the open source IoT space is remarkably unsophisticated.
 
-In spirit, [Armsible](https://github.com/armsible) represents a call-to-action for the use of
+In spirit, Armsible represents a call-to-action for the use of
 industry-standard provisioning tools and techniques in embedded
 applications [[2]](#fn2). Specifically, it is a collection of Ansible
 roles and related tools that facilitate the automated deployment of
@@ -31,7 +34,7 @@ single-board computers.
 ## How do I use Armsible?
 
 As of its unveiling, Armsible boils down to a few Ansible roles and
-[a dynamic inventory script for targeting hosts on a local network](https://github.com/armsible/bin/blob/master/local_network_inventory.py). The
+[a dynamic inventory script for targeting hosts on a local network](https://github.com/whiskerlabs/armsible/blob/master/local_network_inventory.py). The
 initial use case is to provision a set of single-board computers on a
 LAN.
 
@@ -52,7 +55,7 @@ Intel Edison)
 * Roles for installing and configuring software components that are
   needed by embedded developers but not currently covered by the open
   source Ansible community
-  (e.g. [the kernel watchdog](https://github.com/armsible/ansible-watchdog),
+  (e.g. [the kernel watchdog](https://github.com/whiskerlabs/ansible-watchdog),
   U-Boot, GPIO configuration)
 * Tooling that enforces best practices for embedded development
 
@@ -69,12 +72,12 @@ protocols and more-complicated topologies.
 Armsible is structurally inspired by [DebOps](http://debops.org/), a
 collection of Ansible playbooks for Debian-based server
 deployments. It comprises a number of Ansible roles stored as distinct
-repositories within an Armsible GitHub organization. These roles are
-published to Ansible Galaxy and thus installable on the command-line
-with `ansible-galaxy`. A
-[`bin` project](https://github.com/armsible/bin) is provided to house
-complementary tools (i.e. dynamic inventory scripts) to be used in
-conjunction with Armsible roles.
+repositories within <s>an Armsible GitHub organization</s> Whisker Labs'
+GitHub organization. These roles are published to Ansible Galaxy and
+thus installable on the command-line with `ansible-galaxy`. A
+[`bin` project](https://github.com/whiskerlabs/armsible) is provided
+to house complementary tools (i.e. dynamic inventory scripts) to be
+used in conjunction with Armsible roles.
 
 ## What plans exist for Armsible's future?
 

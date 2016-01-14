@@ -2,3 +2,5 @@ _site
 drafts
 .sass-cache
 Gemfile.lock
+*.css
+*.css.map
