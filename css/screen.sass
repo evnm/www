@@ -1,11 +1,11 @@
 $border_color: #dee4da
 $link_color: #396e8a
-$slab_serif: 'Kreon', helvetica, sans
-$sans: helvetica, sans
+$serif: georgia, serif
+$sans_serif: 'Source Sans Pro', sans-serif
 
 body
   background-color: #f6f6f6
-  font: 1.1em georgia, serif
+  font: 1.1em $serif
   color: #5a5a5a
 
 strong
@@ -25,10 +25,13 @@ header
   padding: 24px 0 4px 0
 
   a#title
-    font: 1.2em $slab_serif
-    font-weight: 400
+    font: 1em $sans_serif
+    font-weight: 700
     color: #787878
     border: none
+    display: inline-block
+    line-height: 34px
+    height: 34px
 
   a#title span
     color: #505050
@@ -50,11 +53,11 @@ ul.navigation
 
   a
     float: left
-    padding: 6px
-    font: 14px $slab_serif
+    font: 0.8em $sans_serif
     color: #787878
     letter-spacing: 0.01em
     border: none
+    line-height: 34px
 
   a:hover
     color: #3f3f3f
@@ -68,27 +71,21 @@ ul.navigation
   a.aboutlink
     background: transparent url(/images/user-silhouette.png) center left no-repeat
 
-.post img
-  margin: 0 auto
-  max-width: 100%
-
 .postmeta
-  margin: -1em 0 1.2em 0
   font-size: 0.8em
-  font-weight: 300
   color: #999
-
-div.gist
-  margin-bottom: 1.8em
-  font-size: 90%
 
 ul#post_list
   list-style-type: none
   margin: 0
 
+  li
+    display: block
+    margin-bottom: 0.6em
+
   a
     display: inline-block
-    font: 16px $slab_serif
+    font-family: $sans_serif
     color: #787878
     letter-spacing: 0.01em
     border: none
@@ -97,31 +94,40 @@ ul#post_list
     color: #3f3f3f
 
   .postmeta
-    margin-left: 14px
+    float: right
 
-.post > a
-  display: inline-block
-  border: none
+.post
+  a
+    display: inline-block
+    border: none
+
+  img
+    margin: 0 auto
+    max-width: 100%
+
+  div.gist
+    margin-bottom: 1.8em
+    font-size: 90%
 
 h1
   display: inline-block
   margin-bottom: 0.6em
-  font: 1.6em $slab_serif
-  font-weight: 400
-  letter-spacing: 0.04em
+  font: 1.6em $sans_serif
+  font-weight: 300
+  letter-spacing: 0.01em
   color: #505050
 
 h2
   margin-bottom: 0.6em
   clear: both
-  font: 1.2em $slab_serif
-  font-weight: 400
+  font: 1.2em $sans_serif
+  font-weight: 700
   color: #6a6a6a
 
 h3
   margin-bottom: 0.8em
   clear: both
-  font: 1.2em $slab_serif
+  font: 1.2em $sans_serif
   font-weight: 400
   color: #6a6a6a
 
@@ -131,12 +137,8 @@ p
 
 ol, ul
   list-style-type: disc
-  line-height: 1.9em
-  margin: 0 0 1.7em 1em
-
-
-ul li, ol li
-  margin-bottom: 0.2em
+  line-height: 1.8em
+  margin-bottom: 1.8em
 
 a
   color: #0a0a0a
@@ -166,7 +168,7 @@ blockquote
   color: #6a6a6a
 
   p
-    line-height: 1.9em
+    line-height: 1.8em
 
   cite
     display: block
@@ -185,12 +187,12 @@ blockquote
   color: #999
 
 acronym
-  border-bottom: 1px dotted gray
+  border-bottom: 1px dashed gray
 
 pre
   margin-bottom: 1.8em
   padding: 2px 2px
-  border: 1px dotted #e6e6e6
+  border: 1px dashed #e6e6e6
 
 code
   font-family: inconsolata, monospace
@@ -199,7 +201,7 @@ code
 footer
   margin-top: 1.2em
   padding: 12px 0 36px 0
-  border-top: 1px dotted $border_color
+  border-top: 1px dashed $border_color
   clear: both
 
   ul.navigation
@@ -215,7 +217,7 @@ footer
     float: right
     margin: 0
     padding: 0
-    font: 14px $slab_serif
+    font: 14px $sans_serif
     color: #787878
     letter-spacing: 0.01em
     border: none
@@ -239,7 +241,7 @@ ul#contact_info_list
     border: none
     padding-left: 4px
     display: inline-block
-    font: 14px $slab_serif
+    font: 14px $sans_serif
     color: #787878
     letter-spacing: 0.01em
     border: none
