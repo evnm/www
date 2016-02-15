@@ -6,7 +6,7 @@ title: "Introducing Armsible"
 _**Update:** Since the publication of this article, Armsible projects
 have since been folded into [Whisker Labs' GitHub organization](https://github.com/whiskerlabs)._
 
-![ARM + Ansible](https://s3.amazonaws.com/whiskerlabs.com/img/armsible+logo.png)
+![ARM + Ansible](https://s3-us-west-2.amazonaws.com/www.whiskerlabs.com/armsible+logo.png)
 
 Much ink has been spilled over the "Internet of Things". A consequence
 of this trend is the rise of the
