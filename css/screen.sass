@@ -1,10 +1,10 @@
 $border_color: #dee4da
-$link_color: #396e8a
+$link_color: #0a0a0a
 $serif: georgia, serif
 $sans_serif: 'Source Sans Pro', sans-serif
 
 body
-  background-color: #f6f6f6
+  background-color: #fafafa
   font: 1.1em $serif
   color: #5a5a5a
 
@@ -24,7 +24,7 @@ header
   margin-bottom: 1.2em
   padding: 24px 0 4px 0
 
-  a#title
+  a#masthead
     font: 1em $sans_serif
     font-weight: 700
     color: #787878
@@ -33,7 +33,7 @@ header
     line-height: 34px
     height: 34px
 
-  a#title span
+  a#masthead span
     color: #505050
 
   ul.navigation
@@ -97,9 +97,11 @@ ul#post_list
     float: right
 
 .post
-  a
-    display: inline-block
-    border: none
+  a:hover
+    border-bottom: 1px solid $link_color
+
+  a.title:hover
+    border-bottom: none
 
   img
     margin: 0 auto
@@ -141,12 +143,8 @@ ol, ul
   margin-bottom: 1.8em
 
 a
-  color: #0a0a0a
+  color: $link_color
   text-decoration: none
-  border-bottom: 1px solid #d4d4d4
-
-a:hover
-  border: none
 
 a.imglink
   border: none

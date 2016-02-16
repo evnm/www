@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post">
-  <a href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
+  <a class="title" href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
   {{ content }}
   <p class="postmeta">Published {{ page.date | date: "%B %d, %Y" }}{{ page.optional_meta }}</p>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="evanm">Tweet</a>
