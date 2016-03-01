@@ -11,6 +11,9 @@ body
 strong
   font-weight: bold
 
+.fa
+  margin-right: 4px
+
 #wrapper
   margin: 0 auto
   width: 600px
@@ -21,8 +24,9 @@ header, #content
 header
   position: relative
   height: 34px
-  margin-bottom: 1.2em
-  padding: 24px 0 4px 0
+  margin-bottom: 1.6em
+  padding-top: 16px
+  border-top: 8px solid #c7d5c5
 
   a#masthead
     font: 1em $sans_serif
@@ -38,42 +42,33 @@ header
 
   ul.navigation
     float: right
+    margin: 0
+    list-style-type: none
+
+    li
+      display: inline-block
+      margin: 0 0 0 20px
+
+    .fa
+      font-size: 12px
+      display: inline-block
+      vertical-align: middle
 
     a
-      margin-left: 8px
-      padding-left: 24px
+      display: inline-block
+      font: 0.9em $sans_serif
+      color: #787878
 
-ul.navigation
-  list-style-type: none
-  margin: 0
+    a:hover
+      color: #3f3f3f
 
-  li
-    display: inline-block
-    margin: 0
-
-  a
-    float: left
-    font: 0.8em $sans_serif
-    color: #787878
-    letter-spacing: 0.01em
-    border: none
-    line-height: 34px
-
-  a:hover
-    color: #3f3f3f
-
-  a.archivelink, ul.navigation a.aboutlink
-    padding: 6px 24px
-
-  a.archivelink
-    background: transparent url(/images/newspaper.png) center left no-repeat
-
-  a.aboutlink
-    background: transparent url(/images/user-silhouette.png) center left no-repeat
-
-.postmeta
+.postmeta, .figure_caption
   font-size: 0.8em
   color: #999
+
+.figure_caption
+  display: block
+  line-height: 1.6em
 
 ul#post_list
   list-style-type: none
@@ -97,12 +92,6 @@ ul#post_list
     float: right
 
 .post
-  a:hover
-    border-bottom: 1px solid $link_color
-
-  a.title:hover
-    border-bottom: none
-
   img
     margin: 0 auto
     max-width: 100%
@@ -147,9 +136,28 @@ ol
 ul
   list-style-type: disc
 
+table
+  margin-bottom: 1.8em
+
+thead
+  font-weight: bold
+  font-family: $sans_serif
+
+th, td
+  padding: 8px 18px
+  border: 1px solid $border_color
+  vertical-align: middle
+
 a
   color: $link_color
   text-decoration: none
+  border-bottom: 1px solid $border_color
+
+a:hover
+  border-bottom: 1px solid $link_color
+
+a.masthead, a.masthead:hover, a.title, a.title:hover
+  border-bottom: none
 
 a.imglink
   border: none
@@ -161,13 +169,12 @@ em
   font-style: italic
 
 blockquote
-  padding: 14px 24px
+  padding: 10px 18px
   margin: 0.4em 0 1.6em 0
   border: 1px solid #e4ebe3
   border-radius: .3em
   -moz-border-radius: .3em
   -webkit-border-radius: .3em
-  background: #fcfcfc // url(/images/quote.gif) top left no-repeat
   color: #6a6a6a
 
   p
@@ -202,32 +209,18 @@ code
   padding: 0px 4px
 
 footer
-  margin-top: 1.2em
-  padding: 12px 0 36px 0
+  margin-top: 2em
+  padding-top: 12px
   border-top: 1px dashed $border_color
-  clear: both
+  font: 0.8em $sans_serif
+  letter-spacing: 0.02em
+  color: #999
 
-  ul.navigation
-    float: left
+  .fa, a
+    color: #5a5a5a
 
-    li
-      margin-right: 1em
-
-      a
-        padding-left: 0px
-
-  a.twitterlink
-    float: right
-    margin: 0
-    padding: 0
-    font: 14px $sans_serif
-    color: #787878
-    letter-spacing: 0.01em
-    border: none
-    background: none
-
-  a.twitterlink:hover
-    color: #3f3f3f
+  a:hover
+    border-color: #5a5a5a
 
 ul#contact_info_list
   margin: 0 auto
