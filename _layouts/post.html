@@ -6,6 +6,6 @@ layout: default
   <a class="title" href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
   {{ content }}
   <p class="postmeta"><i class="fa fa-file-text"></i> Published {{ page.date | date: "%B %d, %Y" }}{{ page.optional_meta }}</p>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-via="evanm">Tweet</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="evanm" data-dnt="true">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
