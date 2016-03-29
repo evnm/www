@@ -360,6 +360,13 @@ specific type of data called pseudo-periodicity, we were able to
 reduce the average-case size of our real-world sensor data by an order
 of magnitude.
 
+_**Update:** The compression technique described in this essay has
+since been deployed fleet-wide at Whisker Labs, resulting in a roughly
+84% reduction in bandwidth and overall data size._
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/evanm">@evanm</a> A fun morning: observing an 84% fleet-wide bandwidth reduction due to our adaptive averaging algorithm <a href="https://t.co/j26HXUeqYo">pic.twitter.com/j26HXUeqYo</a></p>&mdash; Evan Meagher (@evanm) <a href="https://twitter.com/evanm/status/707993539733377024">March 10, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 *Thanks to
 [Steven Lanzisera](http://www.eecs.berkeley.edu/~slanzise/),
 [Wilhelm Bierbaum](https://twitter.com/wil), and
