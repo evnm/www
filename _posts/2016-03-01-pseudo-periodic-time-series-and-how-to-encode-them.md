@@ -376,7 +376,7 @@ feedback on drafts of this essay.*
 <section class="footnotes">
   <h2>References</h2>
   <ol>
-    <li> T. Pelkonen, et al, "Gorilla: A Fast, Scalable, In-Memory Time Series Database," Proceedings of the VLDB Endowment, v.8, n.12, p.1816-1827, August 2015. <a href="http://www.vldb.org/pvldb/vol8/p1816-teller.pdf">(link)</a></li>
+    <li>T. Pelkonen, et al, "Gorilla: A Fast, Scalable, In-Memory Time Series Database," Proceedings of the VLDB Endowment, v.8, n.12, p.1816-1827, August 2015. <a href="http://www.vldb.org/pvldb/vol8/p1816-teller.pdf">(link)</a></li>
     <li>W. A. Sethares, "Repitition and Pseudo-periodicity," Tatra Mountains Mathematical Publications, Publication 23, 2001. <a href="http://sethares.engr.wisc.edu/paperspdf/pnorm.pdf">(link)</a></li>
     <li>W. A. Sethares and T. W. Staley, "Meter and Periodicity in Musical Performance," Journal of New Music Research, August 2010. <a href="http://extras.springer.com/2007/978-1-84628-639-1/Papers/jnmr2001.pdf">(link)</a></li>
     <li>C. Valens, "A Really Friendly Guide to Wavelets," 1999. <a href="http://agl.cs.unm.edu/~williams/cs530/arfgtw.pdf">(link)</a></li>
