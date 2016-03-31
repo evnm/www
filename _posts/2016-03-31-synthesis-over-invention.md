@@ -94,13 +94,19 @@ theoretical mathematics is equivalent to maintaining a balanced diet
 of abstraction in a computational system.
 
 For example, I would go so far as to say that there is a trend in
-certain programming language communities to culturally appropriate as
-much from the fields of modern mathematics as possible. This has the
-adverse consequence of imposing an immense educational burden on
-newcomers, which
-[I think](https://twitter.com/evanm/status/714521881387204608) does
-all of us a disservice and leads to the eventual marginalization of
-the abstraction-laden platform.
+certain niche programming language communities to culturally
+appropriate as much from the fields of modern mathematics as
+possible. This has several adverse consequences, most immediate of
+which is the imposition of an immense educational burden on
+newcomers. Longer term, when projects are built around arcane
+abstractions that few people truly understand, they are inevitably
+used &#8220;improperly&#8221; because consumers don't know any better.
+
+[I think](https://twitter.com/evanm/status/714521881387204608) that
+the degree to which a project exposes overly-conceptual abstraction is
+directly related to the rate at which technical debt accumulates in
+consuming code. Such cases do all of us a disservice and lead to the
+eventual marginalization of the abstraction-laden technology.
 
 To me, it's interesting to think about where the pendulum of creation
 vs synthesis currently lies in the world of software development. We
@@ -128,8 +134,10 @@ By emulating David Hilbert and studying disparate fields with an eye
 towards unification, we can produce powerful tools without requiring
 that our users read 40 whitepapers before understanding anything.
 
-*Thanks to [Rishi Ishairzay](https://twitter.com/rishair) for reading
-and providing feedback on drafts of this essay.*
+*Thanks to [Rishi Ishairzay](https://twitter.com/rishair),
+[Marcel Molina](https://twitter.com/noradio), and
+[Arya Asemanfar](https://twitter.com/a_a) for reading and providing
+feedback on drafts of this essay.*
 
 <section class="footnotes">
   <h2>References</h2>
