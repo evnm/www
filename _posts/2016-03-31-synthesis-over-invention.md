@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Towards synthesis"
+title: "Synthesis over invention"
 date: 2016-03-31
 ---
 
