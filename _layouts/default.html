@@ -4,9 +4,11 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta content="Evan Meagher" name="author" />
     <meta content="The website of Evan Meagher" name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link href="https://feeds.feedburner.com/evnmgithub" rel="alternate" title="The blog of Evan Meagher" type="application/atom+xml" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css" />
-    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="/css/screen.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
@@ -14,10 +16,12 @@
   </head>
 
   <body>
-    <div id="wrapper">
-      <header>
-        <a id="masthead" href="/">The website of <span>Evan Meagher</span></a>
-        <ul class="navigation">
+    <div id="wrapper" class="container">
+      <header class="row">
+        <div class="col-md-6">
+          <a id="masthead"  href="/">The website of <span>Evan Meagher</span></a>
+        </div>
+        <ul class="navigation col-md-6"">
           <li><i class="fa fa-user"></i> <a href="/about.html" title="About">About</a></li>
           <li><i class="fa fa-quote-right"></i> <a href="/quotes.html" title="Quotes">Quotes</a></li>
         </ul>

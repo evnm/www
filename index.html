@@ -5,9 +5,9 @@ title: Evan Meagher
 
 <ul id="post_list">
 {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="postmeta">{{ post.date | date: "%Y" }}</span>
+  <li class="row">
+    <a href="{{ post.url }}" class="col-md-10">{{ post.title }}</a>
+    <span class="postmeta col-md-2">{{ post.date | date: "%Y" }}</span>
   </li>
 {% endfor %}
 </ul>
