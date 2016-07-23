@@ -2,12 +2,13 @@
 layout: default
 title: Evan Meagher
 ---
-
-<ul id="post_list">
-{% for post in site.posts %}
-  <li class="row">
-    <a href="{{ post.url }}" class="col-xs-12 col-sm-10">{{ post.title }}</a>
-    <span class="postmeta col-sm-2 hidden-xs">{{ post.date | date: "%Y" }}</span>
-  </li>
-{% endfor %}
-</ul>
+<section>
+  <ul id="post_list">
+    {% for post in site.posts %}
+    <li class="row">
+      <a href="{{ post.url }}" class="col-xs-12 col-sm-10">{{ post.title }}</a>
+      <span class="postmeta col-sm-2 hidden-xs">{{ post.date | date: "%Y" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
