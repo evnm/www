@@ -2,9 +2,9 @@
 layout: default
 ---
 <div class="post">
+  <p class="postmeta">Published {{ page.date | date: "%B %d, %Y" }}{{ page.optional_meta }}</p>
   <a class="title" href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
   {{ content }}
-  <p class="postmeta"><i class="fa fa-file-text"></i> Published {{ page.date | date: "%B %d, %Y" }}{{ page.optional_meta }}</p>
 
   <!-- Sharingbutton Twitter -->
   <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=&amp;url=https://evanmeagher.net{{ page.url }}" target="_blank" aria-label="">
