@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Pseudo-periodic time series and how to encode them"
+title: Adaptive compression of periodic signals
+subtitle: "or: Pseudo-periodic time series and how to encode them"
 date: 2016-03-02
 ---
 

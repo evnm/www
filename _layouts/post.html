@@ -4,6 +4,9 @@ layout: default
 <div class="post">
   <p class="postmeta">Published {{ page.date | date: "%B %d, %Y" }}{{ page.optional_meta }}</p>
   <a class="title" href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
+  {% if page.subtitle != null %}
+  <p class="subtitle">{{ page.subtitle }}</p>
+  {% endif %}
   {{ content }}
 
   <!-- Sharingbutton Twitter -->
