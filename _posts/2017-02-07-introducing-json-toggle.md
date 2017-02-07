@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Introducing JSON Toggle
-date: 2017-01-18
+date: 2017-02-07
 ---
 
 ![](/images/json-toggle/rail-bw.jpg)
 
 This post proposes _JSON Toggle_, a JSON document structure for
 specifying feature toggles. This format is being used at
-[Whisker Labs](https://www.whiskerlabs.com) through
-[a Java 8 library](https://github.com/whiskerlabs/toggle), which we're
+[Whisker Labs](https://www.whiskerlabs.com) with
+[a Java 8 library](https://github.com/whiskerlabs/toggle) which we're
 open-sourcing as a proof-of-concept for JSON Toggle.
 
 ## Background
@@ -22,14 +22,15 @@ restart processes with new configuration. When used judiciously,
 feature toggles can dramatically increase a team’s rate of
 experimentation and delivery.
 
-The state underlying a collection of feature toggles is typically read
-at runtime from some side channel such as a database or a config
+The state of a collection of feature toggles is typically read at
+runtime from some side channel such as a database or a config
 file. This state can be updated out-of-band with tooling (e.g. a
 dashboard) and automatically distributed to running applications. At
-Twitter, the company-wide feature flag system provided the software
-equivalent of a railroad switching station, giving us dynamic control
-over which codepaths were enabled for which users. This level of
-flexibility unlocks the ability to roll out new features and perform
+Twitter (where I used to work), the company-wide feature flag system
+provides the software equivalent of a railroad switching station,
+giving teams dynamic control over which codepaths were enabled for
+which users. This level of flexibility unlocks the ability to roll out
+new features and perform
 [large refactors](https://medium.com/turbine-labs/every-release-is-a-production-test-b31d80f2bc74#.gp6im5ad7)
 with a minimum of pulled-out hair.
 
@@ -43,10 +44,10 @@ feature toggles have become a common pattern
 [companies](http://techblog.netflix.com/2013/11/preparing-netflix-api-for-deployment.html)
 and have made their way into the
 [enterprise](https://msdn.microsoft.com/en-us/magazine/dn683796). Despite
-this, there has never been any successful effort to standardize the
+this, there has never been a successful effort to standardize the
 means by which toggles are configured. By and large, the state of the
-art involves each organization building and maintaining a bespoke
-distributed CRUD app to implement them.
+art has each organization building an implementation from scratch and
+maintaining a bespoke distributed CRUD app to manage them.
 
 __It’s shocking to me that there isn’t an equivalent of
 [the statsd protocol](https://github.com/b/statsd_spec) for feature
@@ -65,8 +66,22 @@ not a feature is enabled for a given request.
 
 
 JSON Toggle is language-agnostic in the sense that ingestion libraries
-may be implemented in any programming language. A toggle spec looks
-like this:
+may be implemented in any programming language.
+
+## An example toggle spec
+
+In the following example toggle specification, three toggles are
+defined:
+
+1. `"/feature/ab_test"` which acts as a simple coin-flip with 50%
+   probability.
+2. `"/feature/dogfood_widget"` which can be used to guard a feature
+   that is 100% accessible to employees but inaccessible to all other
+   users.
+3. `"/feature/incremental_rollout"` which grants access to all
+employees, but only 1% of non-employee users.
+
+The spec looks like this:
 
 {% highlight json %}
 [
@@ -127,7 +142,7 @@ probability values to certain types of requests. For example, a filter
 could be used to target a cohort of users, such as “employees” or
 “beta testers”.
 
-### Toggle Specification
+### Toggle Specification specification
 
 An individual toggle definition is broken into three components:
 
@@ -146,35 +161,56 @@ An individual toggle definition is broken into three components:
   filter applies to a request. Values are specified in
   [basis points](https://en.wikipedia.org/wiki/Basis_point) and define
   toggle probabilities out of 10,000. Thus a toggle value of 5,000
-  will result in a toggle probability of 50% (i.e. 5,000/10,000).
-
-In the example above, three toggles are defined:
-
-1. `"/feature/ab_test"` which acts as a simple coin-flip with 50%
-   probability.
-2. `"/feature/dogfood_widget"` which can be used to guard a feature
-   that is 100% accessible to employees but inaccessible to all other
-   users.
-3. `"/feature/incremental_rollout"` which grants access to all
-   employees, but only 1% of non-employee users.
+  will result in a toggle probability of 50%.
 
 ## A Java 8 library for working with JSON Toggle
 
 In addition to this protocol, I’d like to share an early version of a
 JSON Toggle ingestion library that we’re using at Whisker Labs for our
 Java services. [toggle](https://github.com/whiskerlabs/toggle) is a
-Java 8 library which implements the functionality described above,
-with caching via [Caffeine](https://github.com/ben-manes/caffeine) and
-support for Amazon DynamoDB and JSON/YAML files as backing stores.
+Java 8 library which implements the functionality described above
+using `java.util.function` primitives.  It supports toggle
+specifications stored in Amazon DynamoDB tables or JSON/YAML files,
+and offers a caching decorator powered by
+[Caffeine](https://github.com/ben-manes/caffeine).
+
+With this library, we can do things like this:
+
+{% highlight java %}
+// Construct a caching `ToggleMap` backed by a DynamoDB table.
+Table dynamoDbTable = dynamoDbClient.getTable("production-toggles");
+
+ToggleMap<String, Integer> toggleMap = new CachingToggleMap<>(
+  new DynamoDbToggleMap<Integer>(dynamoDbTable),
+  "maximumSize=1000,expireAfterWrite=1m"
+);
+
+// Create a toggle backed by the "/feature/new_hotness" definition.
+Toggle<Integer> fancyNewFeature = toggleMap.apply("/feature/new_hotness");
+
+// Use the toggle to guard some new functionality, based on a user ID.
+if (fancyNewFeature.test(user.userId)) {
+  // New hotness.
+} else {
+  // Old and busted.
+}
+
+{% endhighlight %}
+
+_Nomenclature unabashedly cribbed from
+[Finagle](https://twitter.github.io/finagle/guide/Configuration.html#feature-toggles)._
 
 ## Now what?
 
+If JSON Toggle is to become a thing, we'll need to write ingestion
+libraries in other programming languages and various tools to make it
+easy to manage with toggle specifications.
+
 If you think this approach could be useful or that it’s a stupid idea,
-I’d love to hear from you. In lieu of enough interest to warrant a
-formal channel like a mailing list, please reach out
+I’d love to hear from you. In lieu of an official channel like a
+mailing list, for the time being, please reach out
 [via email](mailto:evan.meagher@gmail.com) or by filing an issue on
-the [toggle project on GitHub](https://github.com/whiskerlabs/toggle)
-.
+the [toggle project on GitHub](https://github.com/whiskerlabs/toggle).
 
 *Thanks to [Rishi Ishairzay](https://twitter.com/rishair) for reading
 and providing feedback on drafts of this essay.*
