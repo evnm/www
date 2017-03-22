@@ -42,7 +42,7 @@ kept up at night by fear of investor insurrection is not one that’s
 apt to fret about automation’s impact on the working class.
 
 A company that fails to overcome this pressure is akin to a truck
-rolling downhill with its breaks cut. As more people pin their hopes
+rolling downhill with its brakes cut. As more people pin their hopes
 and dreams to the company, management starts to lose political capital
 and control of their own destiny. As things get dicier, it starts
 looking preferable to steer the truck towards the crowded intersection
