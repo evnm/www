@@ -1,12 +1,12 @@
-$border_color: #dee4da
-$link_color: #0a0a0a
+$body_color: #5a5a5a
+$bg_color: #FAFAFA
 $serif: 'Source Serif Pro', georgia, serif
 $sans_serif: 'Source Sans Pro', sans-serif
 
 body
-  background-color: #fafafa
+  background-color: $bg_color
   font: 17.5px $serif
-  color: #5a5a5a
+  color: $body_color
 
 strong
   font-weight: bold
@@ -56,28 +56,38 @@ header
 
     a
       font-family: $sans_serif
-      color: #787878
-
-    a:hover
-      color: #3f3f3f
 
 .panel
   background-color: #9E8DAD
-  color: #FAFAFA
-  font: 16px $sans_serif
+  color: $bg_color
+  font: 18px $sans_serif
   font-weight: 300
-  letter-spacing: 0.03em
+  letter-spacing: 0.04em
   border: none
   border-radius: 0
   margin-bottom: 32px
 
+  h1
+    color: $bg_color
+    margin-bottom: 0.4em
+
+  hr
+    margin-top: 0
+    border-top: 1px dashed lighten(#9E8DAD, 10%)
+
+  a
+    color: $bg_color
+    border-bottom: 1px solid darken($bg_color, 50%)
+
   p
-    line-height: 1.4em
-    text-align: justify
+    line-height: 1.5em
+    margin-bottom: 1em
+
+  p:last-of-type
     margin-bottom: 0
 
 .panel-body
-  padding: 8px 10px
+  padding: 18px 48px
 
 .postmeta, .figure_caption
   color: #999
@@ -102,14 +112,8 @@ ul#post_list
     margin-bottom: 0.6em
 
   a
-    display: inline-block
     font-family: $sans_serif
-    color: #787878
     letter-spacing: 0.01em
-    border: none
-
-  a:hover
-    color: #3f3f3f
 
   .postmeta
     text-align: right
@@ -175,18 +179,18 @@ thead
 
 th, td
   padding: 8px 18px
-  border: 1px solid $border_color
+  border: 1px solid lighten($body_color, 50%)
   vertical-align: middle
 
 a
-  color: $link_color
   text-decoration: none
-  border-bottom: 1px solid $border_color
+  color: $body_color
+  border-bottom: 1px solid lighten($body_color, 50%)
 
 a:hover
   text-decoration: none
-  border-bottom: 1px solid $link_color
-  color: #0a0a0a
+  color: darken($body_color, 20%)
+  border-bottom: 1px solid darken(lighten($body_color, 50%), 10%)
 
 a.masthead, a.masthead:hover, a.title, a.title:hover
   border-bottom: none
@@ -214,7 +218,7 @@ blockquote
 
   cite
     display: block
-    border-top: 1px dashed #dee4da
+    border-top: 1px dashed lighten($body_color, 50%)
     margin-top: -.8em
     margin-bottom: 0.2em
     padding-top: .8em
@@ -240,16 +244,13 @@ code
 footer
   margin-top: 2em
   padding-top: 12px
-  border-top: 1px dashed $border_color
+  border-top: 1px dashed lighten($body_color, 50%)
   font-family: $sans_serif
   letter-spacing: 0.02em
   color: #999
 
   .fa, a
-    color: #5a5a5a
-
-  a:hover
-    border-color: #5a5a5a
+    color: $body_color
 
 ul#contact_info_list
   margin: 0 auto

@@ -3,14 +3,17 @@ layout: default
 title: Evan Meagher
 ---
 <div class="panel panel-body">
-  <p>Evan is a software developer and distributed systems engineer based in Oakland, CA</p>
+  <h1>Who?</h1>
+  <hr />
+  <p>My name is Evan Meagher [ˈɛvən mɑr] and I'm a software developer, systems engineer, and dog-owner in Oakland, CA. Details <a href="/about.html">here</a>.</p>
+  <p>Want to reach out? Email me at <a href="mailto:evan.meagher@gmail.com">evan.meagher@gmail.com</a>.</p>
 </div>
 <section>
   <h2>Writing</h2>
   <ul id="post_list">
     {% for post in site.posts %}
     <li class="row">
-      <a href="{{ post.url }}" class="col-xs-12 col-sm-10">{{ post.title }}</a>
+      <span class="col-xs-12 col-sm-10"><a href="{{ post.url }}">{{ post.title }}</a></span>
       <span class="postmeta col-sm-2 hidden-xs">{{ post.date | date: "%Y" }}</span>
     </li>
     {% endfor %}
