@@ -22,7 +22,7 @@ header, #content
   text-align: left
 
 header
-  margin-bottom: 24px
+  margin-bottom: 32px
   padding-top: 12px
   border: 0
   border-top: 8px solid #8EACCC
@@ -65,7 +65,7 @@ header
   letter-spacing: 0.04em
   border: none
   border-radius: 0
-  margin-bottom: 32px
+  margin-bottom: 48px
 
   h1
     color: $bg_color
@@ -87,7 +87,11 @@ header
     margin-bottom: 0
 
 .panel-body
-  padding: 18px 48px
+  @media screen and (min-width: 750px)
+    padding: 18px 48px
+
+  @media screen and (max-width: 750px)
+    padding: 16px 12px
 
 .postmeta, .figure_caption
   color: #999
