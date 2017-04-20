@@ -258,21 +258,25 @@ footer
 
 ul.emoji_list
   list-style: none
-  margin-left: 0
-  padding-left: 1em
-  text-indent: -1em
+  margin: 0
+  padding: 0
+
+
+  .col-xs-1, .col-xs-11
+    padding: 0
+    margin-bottom: 0.6em
 
   .fa
     text-indent: 0
 
 ul#contact_info_list
-  margin: 0 auto
-  list-style: none
+  padding: 0
+  list-style-type: none
 
   li
     width: 8em
     display: inline-block
-    margin-bottom: 0.5em
+    margin-bottom: 0.6em
 
   a
     height: 16px
@@ -280,5 +284,6 @@ ul#contact_info_list
     padding-left: 4px
     font-family: $sans_serif
 
-section.footnotes
+section
+  clear: both
   margin: 2em 0 0 0
