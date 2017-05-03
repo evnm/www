@@ -239,9 +239,9 @@ Labs in the 70s. Working with resource-limited environments requires a
 fundamental understanding of how computers work. In all, this makes
 the space an enriching one to work in.
 
-Beards are back with a vengeance, vinyl records are resurgent, and
-more people are having to care how many bytes their programs occupy in
-memory. Everything old is new again.
+Vinyl records are resurgent and more people are having to care how
+many bytes their programs occupy in memory. Everything old is new
+again.
 
 ## Conclusion
 
