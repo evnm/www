@@ -16,8 +16,8 @@ In such systems, failure is an inevitability that must be planned
 for. Whether you're talking about an electricity grid or a network of
 software services, the study and construction of distributed systems
 necessarily entail having to worry about component failure. Planning
-for failure and designing systems to be able to mitigate its impact is
-at the core of resiliency.
+for failure and designing [systems](/2017/02/systems-thinkpiece) to be
+able to mitigate its impact is at the core of resiliency.
 
 To study the implications of this mindset, let's take a look at how
 resiliency is defined in the electricity generation, transmission, and
@@ -116,7 +116,9 @@ time.
 
 Resilience is more complicated.
 
-> Resilience, stemming from the root _resilio_, meaning to leap or spring back, is concerned with the ability of a system to recover and, in some cases, transform from adversity.
+> Resilience, stemming from the root _resilio_, meaning to leap or
+> spring back, is concerned with the ability of a system to recover
+> and, in some cases, transform from adversity.
 
 Clark-Ginsberg's report goes on to say that "resilience operates from
 a systems perspective, understanding incidents as a complex process
@@ -132,9 +134,15 @@ reasonably characterized using a simple "does it work or not" rubric.
 
 ## We aren't so different, you and I
 
-With respect to the nature of renewable energy and software systems, it's not a coincidence that both can be characterized as distributed systems or that both lend themselves towards discussions of resiliency.
+With respect to the nature of renewable energy and software systems,
+it's not a coincidence that both can be characterized as distributed
+systems or that both lend themselves towards discussions of
+resiliency.
 
-In both cases, intermittent and composable resources require thinking about a service as a distributed system. Part of distributed systems theory and practice is the notion that failure is inevitable, and thus the topic of being resilient to failure is paramount.
+In both cases, intermittent and composable resources require thinking
+about a service as a distributed system. Part of distributed systems
+theory and practice is the notion that failure is inevitable, and thus
+the topic of being resilient to failure is paramount.
 
 *Thanks to [Oren Schetrit](https://www.linkedin.com/in/oschetrit)
 and [Berk Demir](https://twitter.com/bd) for reading and providing
