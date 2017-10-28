@@ -163,9 +163,11 @@ because their breaker panel is on the opposite side of a wall as a
 microwave.
 
 This throws a wrench in our ability as fleet operators to ensure
-timely data collection or reliable upgrades to the devices’
-software. When you put a thing in someone’s home, you lose the ability
-to make any assumptions about its availability and serviceability.
+timely data collection
+or [reliable](/2017/10/resiliency-in-energy-and-software) upgrades to
+the devices’ software. When you put a thing in someone’s home, you
+lose the ability to make any assumptions about its availability and
+serviceability.
 
 The low-hanging fruit mitigation strategy is to enforce rigorous
 testing throughout the development process and thorough QA before
