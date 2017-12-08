@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 gem 'jekyll'
+gem 'jekyll-minifier'
 gem 'rouge'
 gem 's3_website'
