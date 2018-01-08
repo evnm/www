@@ -7,7 +7,7 @@ css: ## Watch for Sass changes
 push: ## Build and push website to S3
 	jekyll build
 	sass css/screen.sass css/screen.css
-	. ~/.aws/profiles/evanmeagher_net_s3_website && s3_website push
+	. ~/.aws/profiles/evanm_website_s3_website && s3_website push
 
 clean: ## Remove all generated files
 	rm css/screen.css

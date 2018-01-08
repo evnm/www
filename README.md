@@ -1,4 +1,4 @@
-# evanmeagher.net
+# evanm.website
 
 This repository contains the source code of my personal website.
 
