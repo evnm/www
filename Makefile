@@ -1,7 +1,7 @@
 run: ## Run a local web server
 	jekyll server -wD
 
-sass: ## Watch for Sass changes
+css: ## Watch for Sass changes
 	sass --watch css:css
 
 push: ## Build and push website to S3
