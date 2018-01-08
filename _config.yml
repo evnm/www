@@ -7,3 +7,4 @@ sass:
   style: compressed
 gems:
   - jekyll-minifier
+  - jekyll-sitemap
