@@ -231,9 +231,9 @@ think we’re safe in assuming that for the next handful of years, the
 trend towards ubiquitous computing will rely on low-power hardware
 platforms that communicate under variable networking conditions.
 
-![](/images/thing-lessons/minsky.jpg)<span
- class="figure_caption">Fig. 4. Photo of Marvin Minsky working on an
- IoT product.</span>
+![](/images/thing-lessons/hamilton.jpg)<span
+ class="figure_caption">Fig. 4. Photo of Margaret Hamilton working on
+ an IoT product.
 
 In a small way, these adverse characteristics harken back to the good
 ol’ days of programming at places like MIT’s AI Lab in the 60s or Bell
