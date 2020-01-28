@@ -1,5 +1,5 @@
 run: ## Run a local web server
-	jekyll server -wD
+	bundle exec jekyll serve
 
 css: ## Watch for Sass changes
 	sass --watch css:css

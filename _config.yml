@@ -5,6 +5,7 @@ markdown: kramdown
 sass:
   dir: css
   style: compressed
-gems:
+plugins:
+  - jekyll-gist
   - jekyll-minifier
   - jekyll-sitemap
