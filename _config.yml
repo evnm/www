@@ -2,6 +2,7 @@ url: https://evanm.website
 permalink: /:year/:month/:title
 highlighter: rouge
 markdown: kramdown
+future: true
 sass:
   dir: css
   style: compressed
