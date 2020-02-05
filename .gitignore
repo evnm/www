@@ -4,3 +4,4 @@ drafts
 Gemfile.lock
 screen.css
 *.css.map
+.jekyll-cache
