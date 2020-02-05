@@ -212,5 +212,7 @@ mailing list, for the time being, please reach out
 [via email](mailto:evan.meagher@gmail.com) or by filing an issue on
 the [toggle project on GitHub](https://github.com/whiskerlabs/toggle).
 
+---
+
 *Thanks to [Rishi Ishairzay](https://twitter.com/rishair) for reading
 and providing feedback on drafts of this essay.*

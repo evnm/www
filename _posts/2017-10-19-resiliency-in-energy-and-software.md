@@ -144,6 +144,8 @@ about a service as a distributed system. Part of distributed systems
 theory and practice is the notion that failure is inevitable, and thus
 the topic of being resilient to failure is paramount.
 
+---
+
 *Thanks to [Oren Schetrit](https://www.linkedin.com/in/oschetrit)
 and [Berk Demir](https://twitter.com/bd) for reading and providing
 feedback on drafts of this essay.*

@@ -12,7 +12,7 @@ Much ink has been spilled over the "Internet of Things". A consequence
 of this trend is the rise of the
 [single-board computer](https://en.wikipedia.org/wiki/Single-board_computer)
 as a mainstream form factor for application development. With the
-popularity of open source [[1]](#fn1) platforms like Raspberry Pi,
+popularity of open source<sup><a id="fn1ref" href="#fn1">1</a></sup> platforms like Raspberry Pi,
 Arduino, and BeagleBoard, it's never been easier to build applications
 that encompass both hardware and software.
 
@@ -27,7 +27,7 @@ of the art in the open source IoT space is remarkably unsophisticated.
 
 In spirit, Armsible represents a call-to-action for the use of
 industry-standard provisioning tools and techniques in embedded
-applications [[2]](#fn2). Specifically, it is a collection of Ansible
+applications<sup><a id="fn2ref" href="#fn2">2</a></sup>. Specifically, it is a collection of Ansible
 roles and related tools that facilitate the automated deployment of
 single-board computers.
 
@@ -93,15 +93,19 @@ useful. The best ways to get involved are by filing GitHub issues on
 individual projects or joining the conversation in #armsible on
 irc.freenode.net.
 
+---
+
 <section class="footnotes">
-<p id="fn1">[1] The technologies in
+  <ol>
+  <li id="fn1">The technologies in
 question are "open source" to varying degrees, but vendors' overall
 inclination towards open source is helping push the hardware world in
 the right direction. For instance, the Arduino and
 BeagleBoard/BeagleBone device families benefit greatly from the
 tooling, documentation, and manufacturing ecosystem afforded by open
-hardware design.</p>
-<p id="fn2">[2] "Embedded" should really be in air quotes here, given
+hardware design. <a href="#fn1ref">↩</a></li>
+<li id="fn2">"Embedded" should really be in air quotes here, given
 that we're talking about machines that run Linux. At the risk of
-graybeards not taking me seriously, I'm going to roll with it.</p>
+graybeards not taking me seriously, I'm going to roll with it. <a href="#fn2ref">↩</a></li>
+</ol>
 </section>

@@ -268,6 +268,7 @@ I, for one, relish these kinds of problems that require you to sink
 your teeth in. And I hope we as an industry use them as an opportunity
 to grow.
 
+---
 
 *Thanks to [Fikreab Mulugeta](https://www.instagram.com/baerkif/) for
 reading and providing feedback on drafts of this essay.*

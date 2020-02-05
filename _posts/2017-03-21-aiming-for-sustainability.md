@@ -89,5 +89,7 @@ Starting a company is hard work. Minimizing a company's exploitative
 fallout on society requires patience, some amount of privilege, and
 fundamental alignment among the founding team.
 
+---
+
 *Thanks to [Oren Schetrit](https://www.linkedin.com/in/oschetrit) for
 reading and providing feedback on drafts of this essay.*

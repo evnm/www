@@ -134,10 +134,14 @@ By emulating David Hilbert and studying disparate fields with an eye
 towards unification, we can produce powerful tools without requiring
 that our users read 40 whitepapers before understanding anything.
 
+---
+
 *Thanks to [Rishi Ishairzay](https://twitter.com/rishair),
 [Marcel Molina](https://twitter.com/noradio), and
 [Arya Asemanfar](https://twitter.com/a_a) for reading and providing
 feedback on drafts of this essay.*
+
+---
 
 <section class="footnotes">
   <h2>References</h2>

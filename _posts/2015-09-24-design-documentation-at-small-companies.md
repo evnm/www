@@ -177,6 +177,8 @@ early stage of your company, going through the mental exercise of
 considering its implications will increase your team's operational
 awareness.
 
+---
+
 *Thanks to [Marcel Molina](https://twitter.com/noradio) and
 [Gary Tsang](https://twitter.com/garru) for reading and providing
 feedback on drafts of this essay.*

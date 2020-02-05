@@ -77,10 +77,12 @@ narrative (namely, prominent executives and VCs) fail to recognize
 technology’s adverse effects. When will Silicon Valley have its
 Oppenheimer moment?
 
-
+---
 
 *Thanks to [Marc Hedlund](https://twitter.com/marcprecipice) for
 reading and providing feedback on drafts of this essay.*
+
+---
 
 \* I realize that this is reductive. Also, the massive outpouring of
 activism since the election would be impossible without social media,

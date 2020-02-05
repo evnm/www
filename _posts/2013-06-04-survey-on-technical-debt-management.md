@@ -44,4 +44,6 @@ Technical debt is often preventable, but an inevitable part of the software deve
 
 If you find this topic interesting, I would encourage you to read through [McConnell's slides](http://www.sei.cmu.edu/community/td2013/program/upload/TechnicalDebt-ICSE.pdf). My notes on the slides are available in [this gist](https://gist.github.com/evnm/5695408).
 
+---
+
 *Thanks to [Trevor Bramble](https://twitter.com/trevorbramble), [Mike Bernstein](https://twitter.com/mrb_bk), and [Richard Bailey](https://twitter.com/falun) for reading and providing feedback on drafts of this post.*

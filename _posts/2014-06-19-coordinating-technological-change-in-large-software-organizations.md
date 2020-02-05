@@ -37,4 +37,6 @@ Part of this documentation’s purpose is to walk developers through the process
 
 Coordinating changes within large software organizations is a necessary evil. There are serious downsides to doing too little or too much, so keeping a manageable number of people informed is a balancing game. Given the definitionally wide reach of “infrastructure”, bottom-up coordination is a key part of introducing new technologies within an organization.
 
+---
+
 *Thanks to [Ruben Oanta](https://twitter.com/rubeydoo) and [Johan Oskarsson](https://twitter.com/skr) for reading and providing feedback on drafts of this post.*
