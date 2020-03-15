@@ -2,6 +2,7 @@ $body_color: #5a5a5a
 $bg_color: #FAFAFA
 $serif: 'Source Serif Pro', georgia, serif
 $sans_serif: 'Source Sans Pro', sans-serif
+$header_color: #8EACCC
 
 body
   background-color: $bg_color
@@ -26,7 +27,7 @@ header
   margin-bottom: 18px
   padding-top: 12px
   border: 0
-  border-top: 8px solid #8EACCC
+  border-top: 8px solid $header_color
 
   a#masthead
     font: 24px $sans_serif
@@ -62,16 +63,15 @@ header
 .panel
   background-color: #9E8DAD
   color: $bg_color
-  font: 18px $sans_serif
+  font: 20px $sans_serif
   font-weight: 300
-  letter-spacing: 0.03em
+  letter-spacing: 0.04em
   border: none
   border-radius: 0
   margin-bottom: 48px
 
-  h1
-    color: $bg_color
-    margin-bottom: 0.4em
+  .subhead
+    font-size: 26px
 
   hr
     margin-top: 0
@@ -79,7 +79,10 @@ header
 
   a
     color: $bg_color
-    border-bottom: 1px solid darken($bg_color, 50%)
+    border-bottom: 1px solid darken($bg_color, 20%)
+
+  a:hover
+    color: darken($bg_color, 10%)
 
   p
     line-height: 1.5em
@@ -196,12 +199,12 @@ th, td
 a
   text-decoration: none
   color: $body_color
-  border-bottom: 1px solid lighten($body_color, 50%)
+  border-bottom: 1px solid lighten($body_color, 20%)
 
 a:hover
   text-decoration: none
-  color: darken($body_color, 20%)
-  border-bottom: 1px solid darken(lighten($body_color, 50%), 10%)
+  color: lighten($body_color, 20%)
+
 
 a.masthead, a.masthead:hover, a.title, a.title:hover
   border-bottom: none
