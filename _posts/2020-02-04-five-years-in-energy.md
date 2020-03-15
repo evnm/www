@@ -86,8 +86,6 @@ And investors need to know what they're funding. Energy is not the realm of hype
 
 So take these lessons with a grain of salt. If you're setting out on a startup journey in the energy sector, your mileage will undoubtedly vary. I'm rooting for you.
 
-If you’d like to dig into this topic over the phone or coffee, <a href="mailto:evan.meagher@gmail.com">shoot me an email</a>.
-
 ---
 
 *Thanks to
