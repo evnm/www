@@ -12,7 +12,7 @@ Over the past five years, I've worked at two startups in what is now being calle
 
 I left Twitter in early 2015 with the goal of finding software opportunities in grid modernization<sup><a id="fn2ref" href="#fn2">2</a></sup>.
 
-Soon thereafter, I met a couple guys who were leaving <acronym title="Lawrence Berkeley National Laboratory">LBNL</acronym> to start a company around [a novel sensing technique](https://pdfs.semanticscholar.org/931c/9a2e7a5843ed077e8564455b551aff74a655.pdf) for monitoring home energy use. I joined them as the first employee of Whisker Labs, where we set about making it cheaper and easier to mine residential energy data. After a handful of successful pilots and an [acquisition](https://venturebeat.com/2016/12/05/earth-networks-acquires-whisker-labs-and-launches-diy-home-energy-monitor/), I parted ways with Whisker Labs in 2018.
+Soon thereafter, I met a couple guys who were leaving <abbr title="Lawrence Berkeley National Laboratory">LBNL</abbr> to start a company around [a novel sensing technique](https://pdfs.semanticscholar.org/931c/9a2e7a5843ed077e8564455b551aff74a655.pdf) for monitoring home energy use. I joined them as the first employee of Whisker Labs, where we set about making it cheaper and easier to mine residential energy data. After a handful of successful pilots and an [acquisition](https://venturebeat.com/2016/12/05/earth-networks-acquires-whisker-labs-and-launches-diy-home-energy-monitor/), I parted ways with Whisker Labs in 2018.
 
 I then spent some time developing an idea to address painpoints I’d observed while working with electric utilities at Whisker Labs. I ended up joining an early-stage team at [X](https://x.company) that shared my thinking on this specific problem space. I can’t say much of anything about this project, due to the secretive nature of X.
 
@@ -60,7 +60,7 @@ For instance, say you start a company with money from friends and family to buil
 
 So you send emails, get on the phone, and rack up airline miles to sell the stuffing out of your idea. You convince a decision-maker at a utility across the country that your product is the perfect fit for a demonstration project they’ve been planning for months. This person introduces you to an executive with “Innovation” in their title and helps you develop a case for why your product is exactly what they’re looking for.
 
-Three months later, you've made it through an <acronym title="Request For Proposals">RFP</acronym> process and landed a $5 MM pilot. The pilot is split into three phases over the course of the next five years, with most of the money coming in the last phase. $500k lands in your bank account for phase zero, which only extends your runway three months once you factor in the people you’ll need to hire. Seven months has passed since your friends-and-family round and you’re losing sleep over the number of parenthesized numbers in your financial spreadsheets.
+Three months later, you've made it through an <abbr title="Request For Proposals">RFP</abbr> process and landed a $5 MM pilot. The pilot is split into three phases over the course of the next five years, with most of the money coming in the last phase. $500k lands in your bank account for phase zero, which only extends your runway three months once you factor in the people you’ll need to hire. Seven months has passed since your friends-and-family round and you’re losing sleep over the number of parenthesized numbers in your financial spreadsheets.
 
 ---
 
