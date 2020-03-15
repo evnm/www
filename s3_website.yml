@@ -12,7 +12,7 @@ cloudfront_distribution_id: <%= ENV['AWS_CLOUDFRONT_DIST_ID'] %>
 #   "assets/*": 6000
 #   "*": 300
 
-# gzip:
+gzip: true
 #   - .html
 #   - .css
 #   - .md
