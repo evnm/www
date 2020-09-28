@@ -5,5 +5,6 @@ gem 'jekyll-minifier'
 gem 'jekyll-sitemap'
 gem 'rouge'
 gem 's3_website'
+gem 'therubyracer'
 
 gem "sass", "~> 3.7"
