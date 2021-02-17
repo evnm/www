@@ -6,6 +6,8 @@ date: 2020-02-24
 
 ![](/images/energy-startup-lessons/glacier.jpg)
 
+_This post also [appeared on The Next Web](https://thenextweb.com/syndication/2020/03/20/6-things-i-learned-from-working-in-climate-tech-startups/) in March 2020._
+
 Over the past five years, I've worked at two startups in what is now being called the climate tech sector<sup><a id="fn1ref" href="#fn1">1</a></sup>. Given the recent surge in interest in this space, I thought it would be worthwhile to record a handful of lessons that I've learned from this experience. These lessons span business strategy and the realities of the electric utility industry.
 
 ## Timeline: What has this guy actually done?
