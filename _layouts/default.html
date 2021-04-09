@@ -6,7 +6,6 @@
     <meta content="Articles about systems, programming, and software engineering management written by Evan Meagher" name="description" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="google-site-verification" content="GZGKjdAZ7DHjnkP3uvRN9kBKeCs7T3psGNXQ8wGXviE" />
-
     <link href="{{site.url}}/atom.xml" rel="alternate" title="The blog of Evan Meagher" type="application/atom+xml" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet" type="text/css" />
@@ -35,6 +34,9 @@
         <p><i class="fa fa-creative-commons" aria-hidden="true"></i>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0 License</a></p>
       </footer>
     </div>
+    {% if jekyll.environment == "prod" %}
+    <script data-goatcounter="https://evnm.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    {% endif %}
     <script type="text/javascript">
       var _gauges = _gauges || [];
       (function() {
