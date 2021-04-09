@@ -1,11 +1,11 @@
 run: ## Run a local web server
-	bundle exec jekyll serve
+	JEKYLL_ENV=dev bundle exec jekyll serve
 
 css: ## Watch for Sass changes
 	bundle exec sass --watch css:css
 
 push: ## Build and push website to S3
-	bundle exec jekyll build
+	JEKYLL_ENV=prod bundle exec jekyll build
 	bundle exec sass css/screen.sass css/screen.css
 	. ~/.aws/profiles/evanm_website_s3_website && s3_website push
 
