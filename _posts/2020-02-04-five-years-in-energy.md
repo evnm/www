@@ -16,7 +16,7 @@ I left Twitter in early 2015 with the goal of finding software opportunities in 
 
 Soon thereafter, I met a couple guys who were leaving <abbr title="Lawrence Berkeley National Laboratory">LBNL</abbr> to start a company around [a novel sensing technique](https://pdfs.semanticscholar.org/931c/9a2e7a5843ed077e8564455b551aff74a655.pdf) for monitoring home energy use. I joined them as the first employee of Whisker Labs, where we set about making it cheaper and easier to mine residential energy data. After a handful of successful pilots and an [acquisition](https://venturebeat.com/2016/12/05/earth-networks-acquires-whisker-labs-and-launches-diy-home-energy-monitor/), I parted ways with Whisker Labs in 2018.
 
-I then spent some time developing an idea to address painpoints I’d observed while working with electric utilities at Whisker Labs. I ended up joining an early-stage team at [X](https://x.company) that shared my thinking on this specific problem space. I can’t say much of anything about this project, due to the secretive nature of X.
+I then spent some time developing an idea to address painpoints I’d observed while working with electric utilities at Whisker Labs. I ended up joining [an early-stage team at X](https://blog.x.company/why-the-electric-grid-needs-a-moonshot-6dbac9b8b2c2) that shared my thinking on this specific problem space. I can’t say much of anything about this project, due to the secretive nature of X.
 
 The following unordered and subjective list reflects my thinking about startups in the energy space, particularly those that aim to sell software to utilities.
 
