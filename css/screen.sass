@@ -6,7 +6,7 @@ $header_color: #8EACCC
 
 body
   background-color: $bg_color
-  font: 17.5px $serif
+  font: 20px $serif
   text-rendering: optimizeLegibility
   color: $body_color
 
@@ -18,7 +18,7 @@ strong
 
 #wrapper
   margin: 0 auto
-  max-width: 630px
+  max-width: 680px
 
 header, #content
   text-align: left
@@ -27,7 +27,6 @@ header
   margin-bottom: 18px
   padding-top: 12px
   border: 0
-  border-top: 8px solid $header_color
 
   a#masthead
     font: 24px $sans_serif
@@ -61,7 +60,7 @@ header
       font-family: $sans_serif
 
 .panel
-  background-color: #9E8DAD
+  background-color: $header_color
   color: $bg_color
   font: 20px $sans_serif
   font-weight: 300
@@ -71,7 +70,7 @@ header
   margin-bottom: 48px
 
   .subhead
-    font-size: 26px
+    font-size: 24px
 
   hr
     margin-top: 0
@@ -176,13 +175,13 @@ p
 ol, ul
   line-height: 1.6em
   margin-bottom: 1.4em
-  padding-left: 1em
+  padding-left: 0em
 
 ol
   list-style-type: decimal
 
-ul
-  list-style-type: square
+li
+  margin-bottom: 0.4em
 
 table
   margin-bottom: 1.4em
